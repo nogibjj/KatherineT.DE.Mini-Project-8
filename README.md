@@ -1,6 +1,6 @@
 # Data Engineering Mini Project 8
 ## Purpose
-The purpose of this project is to rewrite an existing Python scipt for data processing in Rust, and demostrate improvements in speed and resource usage. The Python scipt reads in a csv file (cereal dataset here) and returns the maximum number of the 'calories' variable. I rewrote this in Rust in lib.rs and main.rs. In both Python and Rust scipts, I added functions that return elapsed time, cpu usage and memory usage to compare their performance. 
+The purpose of this project is to rewrite an existing Python scipt for data processing in Rust, and demostrate improvements in speed and resource usage. The Python scipt reads in a csv file (cereal dataset here) and returns the maximum number of the `calories` variable. I rewrote this in Rust in `lib.rs` and `main.rs`. In both Python and Rust scipts, I added functions that return elapsed time, cpu usage and memory usage to compare their performance. 
 
 ## Python Script Steps
 1. Create a reusable Python library with a public function `get_max` that returns maximum number of a dataframe.
