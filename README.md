@@ -1,39 +1,29 @@
-# Data Engineering Mini Project 7
+# Data Engineering Mini Project 8
 ## Purpose
-This template aimed to create functions, using Rust and package a Rust Script into a Command-Line Tool. The folder I used is `calc-cli-with-tests`. This folder includes a vector `FRUITS` with names of different kinds of fruits that is native to Portugal and a function `get_fruits` that selects a random fruit from the vector. I came up with my own function `is_portuguese_fruit` to find out if a fruit is in the vector and tested with three fruits. A new command line argument was created to fit my function and return a full sentence of results. 
+The purpose of this project is to rewrite an existing Python scipt for data processing in Rust, and demostrate improvements in speed and resource usage. The Python scipt reads in a csv file (cereal dataset here) and returns the maximum number of the 'calories' variable. I rewrote this in Rust in lib.rs and main.rs. In both Python and Rust scipts, I added functions that return elapsed time, cpu usage and memory usage to compare their performance. 
 
-## Steps 
-1. Fork the repository at https://github.com/nogibjj/rust-data-engineering
-2. Choose a command-line tool projects. (`calc-cli-with-tests` chosen here)
-3. Create a new command line argument and create a test
-4. Changing output format
-5. Run `cargo build` and `cargo run` to make changes and test
+## Python Script Steps
+1. Create a reusable Python library with a public function `get_max` that returns maximum number of a dataframe.
+2. Use `Pandas` to read in the csv file and use `get_max` to return maximum number of each column
+3. Add functions that print out elapsed time, cpu and memory usage.
+4. Add a test function in `test_main.py` to check if the maximum number of calories is 160.
+5. Make format, lint and test errors.
 
-## Tool Guidance
-1. Install Rust and Cargo first
-2. Check if `cargo.toml` is under the project folder. Also, make sure the working directory is the project folder. If not, run
-```cd /path/to/your/directory```
-3. Run
-``` cargo build```
-``` cargo run```.
-It will get you something like this: 
-![Screen Shot 2023-10-22 at 10 56 33 PM](https://github.com/nogibjj/KatherineT.DE.Mini-Project-7/assets/143833511/83c1b571-117c-4f3d-a022-930ec4f34e02)
+## Rust Script Steps
+1. Rewrite the `get_max` function in Rust as a public function `find_max`. I created a for loop to accomplish this.
+2. The `main.rs` file reads data from the csv file using external crates csv and calculates the maximum value of calories with `find_max`.
+3. Calculate the usage of time by using instant to collect start time and end time. To get memory and cpu usage, std::process::Command and sys_info::mem_info are used.
+4. Run `cargo build` and `cargo run`
+5. Add a test function in `test_main.rs` to check if the maximum number of calories is 160.
+6. Check format, lint and test errors.
 
+<img width="712" alt="Screen Shot 2023-10-23 at 3 19 26 PM" src="https://github.com/nogibjj/KatherineT.DE.Mini-Project-8/assets/143833511/0a4cc61f-4ea2-4fee-884a-c603382878bd">
 
-5. My tool can return random fruits of Portugal or check if a fruit is native in Portugal.
-   - To return random fruits, run
-```cargo run -- --count 5```
-This command will execute the program and request it to generate and print five random fruits. The --count flag with the value 5 specifies the number of fruits to generate.
-   - To check if the fruit is native in Portugal, run
-```cargo run -- -f <fruit_name>```
-For example, you can run
-```cargo run -- -f apple```
-to check if apple is a native fruit. 
+## Performance Comparison
+Python usage and time:
+<img width="256" alt="Screen Shot 2023-10-23 at 3 04 45 PM" src="https://github.com/nogibjj/KatherineT.DE.Mini-Project-8/assets/143833511/87e7ff16-9a13-4b2e-b2f1-5d2489fc5548">
+Rust usage and time:
+<img width="454" alt="Screen Shot 2023-10-23 at 3 04 17 PM" src="https://github.com/nogibjj/KatherineT.DE.Mini-Project-8/assets/143833511/80f2c42c-d519-47d4-88ae-fc8c99bfe3cb">
 
-## Check format and test
-Use `make format` and `make lint` to format and lint the code.
-![Screen Shot 2023-10-22 at 11 00 06 PM](https://github.com/nogibjj/KatherineT.DE.Mini-Project-7/assets/143833511/4e4fa923-274d-4c97-8797-232137028465)
+We can see that all three metrics show that Rust perform better than Python in this data processing function. 
 
-Use `make test` to test the code
-
-![Screen Shot 2023-10-22 at 11 00 24 PM](https://github.com/nogibjj/KatherineT.DE.Mini-Project-7/assets/143833511/61d9684f-ba7a-4dd4-afc9-cf7e9ae735d1)
