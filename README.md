@@ -17,12 +17,17 @@ The purpose of this project is to rewrite an existing Python scipt for data proc
 5. Add a test function in `test_main.rs` to check if the maximum number of calories is 160.
 6. Check format, lint and test errors.
 
+<img width="640" alt="Screen Shot 2023-10-23 at 5 08 24 PM" src="https://github.com/nogibjj/KatherineT.DE.Mini-Project-8/assets/143833511/8893b1f7-73eb-4e3d-9fe8-a48d2230eb5d">
+
 <img width="712" alt="Screen Shot 2023-10-23 at 3 19 26 PM" src="https://github.com/nogibjj/KatherineT.DE.Mini-Project-8/assets/143833511/0a4cc61f-4ea2-4fee-884a-c603382878bd">
 
 ## Performance Comparison
 Python usage and time:
+
 <img width="256" alt="Screen Shot 2023-10-23 at 3 04 45 PM" src="https://github.com/nogibjj/KatherineT.DE.Mini-Project-8/assets/143833511/87e7ff16-9a13-4b2e-b2f1-5d2489fc5548">
+
 Rust usage and time:
+
 <img width="454" alt="Screen Shot 2023-10-23 at 3 04 17 PM" src="https://github.com/nogibjj/KatherineT.DE.Mini-Project-8/assets/143833511/80f2c42c-d519-47d4-88ae-fc8c99bfe3cb">
 
 We can see that all three metrics show that Rust perform better than Python in this data processing function. 
