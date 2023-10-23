@@ -9,7 +9,9 @@ The purpose of this project is to rewrite an existing Python scipt for data proc
 4. Add a test function in `test_main.py` to check if the maximum number of calories is 160.
 5. Make format, lint and test errors.
 <img width="489" alt="Screen Shot 2023-10-23 at 5 25 12 PM" src="https://github.com/nogibjj/KatherineT.DE.Mini-Project-8/assets/143833511/63c1dc2c-2983-42de-8a1b-1ff3796b8799">
+
 <img width="451" alt="Screen Shot 2023-10-23 at 5 25 18 PM" src="https://github.com/nogibjj/KatherineT.DE.Mini-Project-8/assets/143833511/4fca8adc-7ee2-4e08-8f11-44624d7b2c85">
+
 <img width="666" alt="Screen Shot 2023-10-23 at 5 25 29 PM" src="https://github.com/nogibjj/KatherineT.DE.Mini-Project-8/assets/143833511/2187250b-ea51-48a9-8ffe-7bfe95db0b38">
 
 ## Rust Script Steps
