@@ -1,6 +1,6 @@
 # Data Engineering Mini Project 6
 ## Purpose
-This template aimed to create functions, using Rust and package a Rust Script into a Command-Line Tool. The folder I used is `calc-cli-with-tests`. This folder includes a vector `FRUITS` with names of different kinds of fruits that is native to Portugal and a function `get_fruits` that selects a random fruit from the vector. I came up with my own function `is_portuguese_fruit` to find out if a fruit is in the vector and tested three fruits. A new command line argument was created to fit my function and return a full sentence of results. 
+This template aimed to create functions, using Rust and package a Rust Script into a Command-Line Tool. The folder I used is `calc-cli-with-tests`. This folder includes a vector `FRUITS` with names of different kinds of fruits that is native to Portugal and a function `get_fruits` that selects a random fruit from the vector. I came up with my own function `is_portuguese_fruit` to find out if a fruit is in the vector and tested with three fruits. A new command line argument was created to fit my function and return a full sentence of results. 
 
 ## Steps 
 1. Fork the repository at https://github.com/nogibjj/rust-data-engineering
