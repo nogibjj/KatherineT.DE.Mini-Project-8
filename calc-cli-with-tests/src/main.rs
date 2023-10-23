@@ -1,6 +1,6 @@
 /*A CLI that generates random fruits */
 
-use calc_cli_with_tests::{get_fruits, is_portuguese_fruit};  // Import the functions from your library
+use calc_cli_with_tests::{get_fruits, is_portuguese_fruit}; // Import the functions from your library
 use clap::Parser;
 
 /// CLI tool to return random fruits
@@ -10,8 +10,9 @@ struct Args {
     /// The quantity of fruits to return
     #[clap(short, long, default_value = "1")]
     count: u32,
+
     /// The fruit to check if it's native to Portugal
-    #[clap(short, long)]
+    #[clap(short = 'f', long)]
     check_fruit: Option<String>,
 }
 
