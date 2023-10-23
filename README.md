@@ -2,7 +2,7 @@
 ## Purpose
 This template aimed to create functions, using Rust and package a Rust Script into a Command-Line Tool. The folder I used is `calc-cli-with-tests`. This folder includes a vector `FRUITS` with names of different kinds of fruits and a function `get_fruits` that selects a random fruit from the vector. I came up with my own function `is_portuguese_fruit` to find out if a fruit is in the vector and tested three fruits. A new command line argument was created to fit my function and return a full sentence of results. 
 
-## Steps
+## Steps 
 1. Fork the repository at https://github.com/nogibjj/rust-data-engineering
 2. Choose a command-line tool projects. (`calc-cli-with-tests` chosen here)
 3. Create a new command line argument and create a test
