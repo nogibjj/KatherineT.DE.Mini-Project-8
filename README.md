@@ -15,12 +15,12 @@ This template aimed to create functions, using Rust and package a Rust Script in
 ```cd /path/to/your/directory```
 3. Run
 ``` cargo build```
-``` cargo run```
+``` cargo run```.
 It will get you something like this: 
 ![Screen Shot 2023-10-22 at 10 56 33 PM](https://github.com/nogibjj/KatherineT.DE.Mini-Project-7/assets/143833511/83c1b571-117c-4f3d-a022-930ec4f34e02)
 
 
-5. My tool can return random fruits of Portugal or check if the fruit is native in Portugal.
+5. My tool can return random fruits of Portugal or check if a fruit is native in Portugal.
    - To return random fruits, run
 ```cargo run -- --count 5```
 This command will execute the program and request it to generate and print five random fruits. The --count flag with the value 5 specifies the number of fruits to generate.
