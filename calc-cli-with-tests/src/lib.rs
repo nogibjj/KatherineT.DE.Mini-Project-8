@@ -39,6 +39,14 @@ pub fn get_fruits(count: u32) -> Vec<String> {
     fruits
 }
 
+/*
+Check if a fruit is native to Portugal or the Azores.
+Returns true if the fruit is in the FRUITS vector, false otherwise.
+*/
+pub fn is_portuguese_fruit(fruit: &str) -> bool {
+    FRUITS.contains(&fruit)
+}
+
 /*Test 
 
 A test that checks if the get_fruits function returns the correct number of fruits
@@ -52,5 +60,20 @@ mod tests {
     fn test_get_fruits() {
         let fruits = get_fruits(5);
         assert_eq!(fruits.len(), 5);
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::is_portuguese_fruit;
+
+    #[test]
+    fn test_is_portuguese_fruit() {
+        // Test fruits that are part of the FRUITS array
+        assert!(is_portuguese_fruit("banana"));
+        assert!(is_portuguese_fruit("raspberry"));
+        
+        // Test a fruit that is not part of the FRUITS array
+        assert!(!is_portuguese_fruit("kiwi"));
     }
 }
